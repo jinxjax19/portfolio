@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ella Jackson — Portfolio Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --wri-yellow: #F0AB00;
+    --wri-ink: #1A2E22;
+    --stanford-red: #8C1515;
+    --stanford-grey: #4D4F53;
+    --kqed-red: #C8102E;
+    --kqed-cream: #FFF4E0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Space Mono', monospace;
+  }
+
+  section {
+    min-height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem 1.5rem 4rem;
+    position: relative;
+  }
+
+  .hero-logo {
+    width: min(60vw, 340px);
+    height: 16vh;
+    object-fit: contain;
+    margin-top: 1.5rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .links a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 0.6rem 0;
+    letter-spacing: 0.01em;
+  }
+
+  .link-title {
+    flex: 1;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0.1em 0.35em;
+    margin: 0 -0.35em;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .link-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .type-star {
+    width: 1.8rem;
+    height: 1.8rem;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-right: 0.6rem;
+  }
+
+  .section-index {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+  }
+
+  /* ---------- World Resources Institute ---------- */
+  #wri {
+    background: var(--wri-yellow);
+    color: var(--wri-ink);
+  }
+
+
+  #wri .links a {
+    color: var(--wri-ink);
+  }
+
+  #wri .links a:hover .link-title {
+    background-color: var(--wri-ink);
+    color: var(--wri-yellow);
+  }
+
+  /* ---------- Stanford ---------- */
+  #stanford {
+    background: #ffffff;
+    color: var(--stanford-red);
+  }
+
+  #stanford .links a {
+    color: var(--stanford-red);
+  }
+
+  #stanford .links a:hover .link-title {
+    background-color: var(--stanford-red);
+    color: #ffffff;
+  }
+
+  #stanford .section-index {
+    color: var(--stanford-grey);
+  }
+
+  /* ---------- KQED ---------- */
+  #kqed {
+    background: var(--kqed-red);
+    color: var(--kqed-cream);
+  }
+
+  #kqed .hero-logo {
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+  }
+
+  #kqed .links a {
+    color: var(--kqed-cream);
+  }
+
+  #kqed .links a:hover .link-title {
+    background-color: var(--kqed-cream);
+    color: var(--kqed-red);
+  }
+</style>
+</head>
+<body>
+
+  <section id="kqed">
+    <img class="hero-logo" src="assetts/KQED.svg" alt="KQED logo">
+    <nav class="links">
+      <a href="https://www.kqed.org/news/12084267/california-police-forces-are-becoming-more-diverse-but-wages-have-declined" target="_blank" rel="noopener"><span class="link-title">California Police Forces Are Becoming More Diverse. But Wages Have Declined</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12082724/san-francisco-airport-labor-fight-hits-city-hall-this-week" target="_blank" rel="noopener"><span class="link-title">San Francisco Airport Labor Fight Hits City Hall This Week</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12083376/an-incoming-super-el-nino-may-bring-california-a-wet-hot-winter" target="_blank" rel="noopener"><span class="link-title">An Incoming 'Super El Niño' May Bring California a Wet, Hot Winter</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12084470/bay-area-cyclists-hold-annual-ride-of-silence-to-honor-those-killed-on-city-streets" target="_blank" rel="noopener"><span class="link-title">Bay Area Cyclists Hold Annual Ride of Silence to Honor Those Killed on City Streets</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12078969/sf-legislation-aims-to-crack-down-on-uncertified-batteries-as-fires-grow-more-common" target="_blank" rel="noopener"><span class="link-title">SF Legislation Aims to Crack Down on Uncertified Batteries as Fires Grow More Common</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12078467/beloved-san-jose-charter-school-faces-potential-closure" target="_blank" rel="noopener"><span class="link-title">Beloved San José Charter School Faces Potential Closure</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12080245/northern-california-security-officers-campaign-for-better-wages-training" target="_blank" rel="noopener"><span class="link-title">Northern California Security Officers Campaign for Better Wages, Training</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12079232/after-14-homicides-in-2026-san-francisco-calls-for-ceasefire" target="_blank" rel="noopener"><span class="link-title">After 14 Homicides in 2026, San Francisco Calls for Ceasefire</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12084669/lurie-eyes-34-million-to-cushion-h-r-1-blows-to-medi-cal-and-calfresh" target="_blank" rel="noopener"><span class="link-title">Lurie Eyes $34 Million to Cushion HR 1 Blows to Medi-Cal and CalFresh</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12081931/san-francisco-to-expand-subsidized-child-care-spots-citywide" target="_blank" rel="noopener"><span class="link-title">San Francisco to Expand Subsidized Childcare Spots Citywide</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12079903/oakland-passes-controversial-policy-easing-restrictions-on-encampment-sweeps" target="_blank" rel="noopener"><span class="link-title">Oakland Passes Controversial Policy Easing Restrictions on Encampment Sweeps</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12082454/officials-say-shoring-up-californias-oil-supply-will-come-at-a-price" target="_blank" rel="noopener"><span class="link-title">Officials Say Shoring Up California's Oil Supply Will Come 'At a Price'</span><span class="link-type">Article</span></a>
+      <a href="https://www.kqed.org/news/12081608/martinez-renewable-refinery-workers-strike-amid-contract-dispute-demand-safer-conditions" target="_blank" rel="noopener"><span class="link-title">Martinez Renewable Refinery Workers Strike Amid Contract Dispute, Demand Safer Conditions</span><span class="link-type">Article</span></a>
+    </nav>
+    <span class="section-index">01 / 03</span>
+  </section>
+
+  <section id="stanford">
+    <img class="hero-logo" src="assetts/Stanford.png" alt="Stanford University logo">
+    <nav class="links">
+      <a href="https://peninsulapress.com/2026/05/26/let-them-eat-plants-imagining-a-better-food-future/" target="_blank" rel="noopener"><span class="link-title">Let Them Eat Plants: Imagining a Better Food Future</span><span class="link-type">Article</span></a>
+      <a href="https://peninsulapress.com/2025/12/19/santa-clara-county-rapid-response-network-formulating-super-bowl-plan-for-immigrants-targeted-by-ice-during-the-event/" target="_blank" rel="noopener"><span class="link-title">Santa Clara County Rapid Response Network Formulating Super Bowl Plan for Immigrants Targeted by ICE During the Event</span><span class="link-type">Article</span></a>
+      <a href="https://peninsulapress.com/2025/11/18/your-neighbors-living-room-may-be-san-franciscos-best-venue/" target="_blank" rel="noopener"><span class="link-title">Your Neighbor's Living Room May Be San Francisco's Best Venue</span><span class="link-type">Article</span></a>
+      <a href="https://peninsulapress.com/2025/12/17/bay-area-private-schools-are-bringing-ai-into-their-classrooms-what-can-they-tell-us-about-the-future-of-education/" target="_blank" rel="noopener"><span class="link-title">Bay Area Private Schools Are Bringing AI into Their Classrooms: What Can They Tell Us About the Future of Education?</span><span class="link-type">Article</span></a>
+      <a href="https://peninsulapress.com/2025/10/21/east-palo-altos-city-council-takes-key-steps-to-center-youth-leadership/" target="_blank" rel="noopener"><span class="link-title">East Palo Alto's City Council Takes Key Steps to Center Youth Leadership</span><span class="link-type">Article</span></a>
+      <a href="https://www.cityhallcast.com/" target="_blank" rel="noopener"><img class="type-star" src="assetts/starblack.PNG" alt=""><span class="link-title">Just Do The Right Thing</span><span class="link-type">Thesis</span></a>
+    </nav>
+    <span class="section-index">02 / 03</span>
+  </section>
+
+  <section id="wri">
+    <img class="hero-logo" src="assetts/WRI_Logo_White.svg" alt="World Resources Institute logo">
+    <nav class="links">
+      <a href="https://electricschoolbusinitiative.org/students-electric-school-buses" target="_blank" rel="noopener"><span class="link-title">Students for Electric School Buses</span><span class="link-type">Article</span></a>
+      <a href="http://wri.org/insights/electric-school-bus-student-advocacy" target="_blank" rel="noopener"><span class="link-title">Students Take the Wheel in Push for More Electric School Buses</span><span class="link-type">Article</span></a>
+      <a href="http://electricschoolbusinitiative.org/" target="_blank" rel="noopener"><span class="link-title">Students Need Access to a Clean Ride to School</span><span class="link-type">Website</span></a>
+      <a href="https://electricschoolbusinitiative.org/clean-air" target="_blank" rel="noopener"><span class="link-title">Communities Need Better Air Quality</span><span class="link-type">Page</span></a>
+      <a href="https://electricschoolbusinitiative.org/access-to-funding" target="_blank" rel="noopener"><span class="link-title">Schools Need the Resources to Transition to Electric School Buses</span><span class="link-type">Page</span></a>
+      <a href="https://electricschoolbusinitiative.org/value-chain" target="_blank" rel="noopener"><span class="link-title">Equity in the Electric School Bus Value Chain</span><span class="link-type">Page</span></a>
+      <a href="https://electricschoolbusinitiative.org/inequitable-grid" target="_blank" rel="noopener"><span class="link-title">The Electric School Bus Transition Must Take Inequitable Electric Grids into Account</span><span class="link-type">Page</span></a>
+      <a href="https://www.wri.org/research/electric-mobility-roadmap-vietnam-case-studies" target="_blank" rel="noopener"><span class="link-title">Developing an Electric Mobility Roadmap for Vietnam: Global Experiences From National Case Studies</span><span class="link-type">Research Paper</span></a>
+      <a href="https://www.ndctransportinitiativeforasia.org/" target="_blank" rel="noopener"><span class="link-title">NDC Transportation Initiative for Asia (Project Lead for Website Development)</span><span class="link-type">Website</span></a>
+      <a href="https://www.wri.org/research/needs-assessment-equitable-school-bus-electrification-us-school-districts" target="_blank" rel="noopener"><span class="link-title">Needs Assessment for Equitable School Bus Electrification in U.S. School Districts</span><span class="link-type">Research Paper</span></a>
+      <a href="https://www.wri.org/research/electric-school-bus-us-market-study-and-buyers-guide-resource-school-bus-operators" target="_blank" rel="noopener"><span class="link-title">Electric School Bus U.S. Market Study and Buyer's Guide</span><span class="link-type">Research Paper</span></a>
+      <a href="https://electricschoolbusinitiative.org/tools" target="_blank" rel="noopener"><span class="link-title">Step-by-Step Guide for School Bus Electrification</span><span class="link-type">Guide</span></a>
+      <a href="https://thecityfix.com/blog/hydrogen-fuel-cell-vehicles-make-sense-cities-eleanor-jackson/" target="_blank" rel="noopener"><span class="link-title">Do Hydrogen Fuel Cell Vehicles Make Sense for Cities?</span><span class="link-type">Article</span></a>
+    </nav>
+    <span class="section-index">03 / 03</span>
+  </section>
+
+</body>
+</html>
